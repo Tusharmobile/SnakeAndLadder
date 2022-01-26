@@ -9,13 +9,14 @@ namespace SnakeAndLadder
     internal class Singleplayer
     {
         public int StartPoint = 0;
+        public int DiceRoll;
         public void StartPlaying()
         {
-            Console.WriteLine("Game start now");
-
-            Console.WriteLine("Starting point is " + StartPoint); //Main Start Point
+            Random Random = new Random();
+            DiceRoll = Random.Next(1, 7);
+            Console.WriteLine("player Roll  Dice number is:" + " " + DiceRoll);
         }
     }
 }
-    
+
 
